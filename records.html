@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luemas Ventures Supermarket Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #333;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td img {
+            width: 100px;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .add-btn, .subtract-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .subtract-btn {
+            background-color: #dc3545;
+        }
+        .checkout-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .checkout-btn:hover {
+            background-color: #0056b3;
+        }
+        input[type="number"], input[type="text"] {
+            padding: 10px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Luemas Ventures Supermarket Store</h1>
+</header>
+
+<nav>
+    <a href="#income-expenses">Income & Expenses</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#stocks">Stocks</a>
+    <a href="#sales">Sales</a>
+    <a href="#purchases">Purchases</a>
+    <a href="#customers-records">Customers' Records</a>
+    <a href="#debts-debtors">Debts & Debtors</a>
+</nav>
+
+<main>
+
+    <!-- Income and Expenses Section -->
+    <section id="income-expenses">
+        <h2>Income and Expenses</h2>
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Amount (₦)</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Sales Revenue</td>
+                <td>₦500,000</td>
+                <td>Oct 15, 2024</td>
+                <td>
+                    <button class="add-btn">Add</button>
+                    <button class="subtract-btn">Subtract</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Utilities</td>
+                <td>₦15,000</td>
+                <td>Oct 10, 2024</td>
+                <td>
+                    <button class="add-btn">Add</button>
+                    <button class="subtract-btn">Subtract</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Inventory Section -->
+    <section id="inventory">
+        <h2>Inventory</h2>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Stock Quantity</th>
+                <th>Cost Price (₦)</th>
+                <th>Selling Price (₦)</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><img src="images/rice.jpg" alt="Rice"></td>
+                <td>Bag of Rice (50kg)</td>
+                <td>80</td>
+                <td>₦25,000</td>
+                <td>₦30,000</td>
+                <td>
+                    <button class="add-btn">Add</button>
+                    <button class="subtract-btn">Subtract</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="images/oil.jpg" alt="Cooking Oil"></td>
+                <td>Cooking Oil (25L)</td>
+                <td>120</td>
+                <td>₦10,000</td>
+                <td>₦12,500</td>
+                <td>
+                    <button class="add-btn">Add</button>
+                    <button class="subtract-btn">Subtract</button>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Stocks Section -->
+    <section id="stocks">
+        <h2>Stocks</h2>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Quantity Purchased</th>
+                <th>Date Purchased</th>
+                <th>Supplier</th>
+            </tr>
+            <tr>
+                <td><img src="images/rice.jpg" alt="Rice"></td>
+                <td>Bag of Rice (50kg)</td>
+                <td>100</td>
+                <td>Sept 28, 2024</td>
+                <td>ABC Suppliers</td>
+            </tr>
+            <tr>
+                <td><img src="images/oil.jpg" alt="Cooking Oil"></td>
+                <td>Cooking Oil (25L)</td>
+                <td>200</td>
+                <td>Sept 30, 2024</td>
+                <td>XYZ Distributors</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Sales Section -->
+    <section id="sales">
+        <h2>Sales</h2>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Selling Price (₦)</th>
+                <th>Total (₦)</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><img src="images/rice.jpg" alt="Rice"></td>
+                <td>Bag of Rice (50kg)</td>
+                <td>10</td>
+                <td>₦30,000</td>
+                <td>₦300,000</td>
+                <td>
+                    <button class="add-btn">Add</button>
+                    <button class="subtract-btn">Subtract</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="images/oil.jpg" alt="Cooking Oil"></td>
+                <td>Cooking Oil (25L)</td>
+                <td>5</td>
+                <td>₦12,500</td>
+                <td>₦62,500</td>
+                <td>
+                    <button class="add-btn">Add</button>
+                    <button class="subtract-btn">Subtract</button>
+                </td>
+            </tr>
+        </table>
+        <a href="checkout.html" class="checkout-btn">Checkout</a>
+    </section>
+
+    <!-- Purchases Section -->
+    <section id="purchases">
+        <h2>Purchases</h2>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Product</th>
+                <th>Quantity Purchased</th>
+                <th>Cost Price (₦)</th>
+                <th>Total Cost (₦)</th>
+                <th>Date Purchased</th>
+            </tr>
+            <tr>
+                <td><img src="images/rice.jpg" alt="Rice"></td>
+                <td>Bag of Rice (50kg)</td>
+                <td>100</td>
+                <td>₦25,000</td>
+                <td>₦2,500,000</td>
+                <td>Sept 28, 2024</td>
+            </tr>
+            <tr>
+                <td><img src="images/oil.jpg" alt="Cooking Oil"></td>
+                <td>Cooking Oil (25L)</td>
+                <td>200</td>
+                <td>₦10,000</td>
+                <td>₦2,000,000</td>
+                <td>Sept 30, 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Customers' Records Section -->
+    <section id="customers-records">
+        <h2>Customers' Records</h2>
+        <table>
+            <tr>
+                <th>Customer Name</th>
+                <th>Product Purchased</th>
+                <th>Total Amount (₦)</th>
+                <th>Date of Purchase</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Bag of Rice (50kg)</td>
+                <td>₦30,000</td>
+                <td>Oct 10, 2024</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Cooking Oil (25L)</td>
+                <td>₦12,500</td>
+                <td>Oct 12, 2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Debts and Debtors Section -->
+    <section id="debts-debtors">
+        <h2>Debts and Debtors</h2>
+        <table>
+            <tr>
+                <th>Debtor Name</th>
+                <th>Amount Owed (₦)</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>₦5,000</td>
+                <td>Oct 20, 2024</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>₦10,000</td>
+                <td>Oct 25, 2024</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Example of Sales Section with buttons integrated -->
+<section id="sales">
+    <h2>Sales</h2>
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Price (₦)</th>
+            <th>Total (₦)</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><img src="images/rice.jpg" alt="Rice"></td>
+            <td>Bag of Rice (50kg)</td>
+            <td id="quantity-1">10</td>
+            <td id="price-1">₦30,000</td>
+            <td id="total-1" class="product-total">₦300,000</td>
+            <td>
+                <button class="add-btn" onclick="addToInventory(1)">Add</button>
+                <button class="subtract-btn" onclick="subtractFromInventory(1)">Subtract</button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="images/oil.jpg" alt="Cooking Oil"></td>
+            <td>Cooking Oil (25L)</td>
+            <td id="quantity-2">5</td>
+            <td id="price-2">₦12,500</td>
+            <td id="total-2" class="product-total">₦62,500</td>
+            <td>
+                <button class="add-btn" onclick="addToInventory(2)">Add</button>
+                <button class="subtract-btn" onclick="subtractFromInventory(2)">Subtract</button>
+            </td>
+        </tr>
+    </table>
+
+    <h3>Total Cart Value: <span id="cart-total">₦362,500</span></h3>
+    <button id="checkout-btn" class="checkout-btn">Checkout</button>
+</section>
+
+
+</main>
+
+<script>
+    // JavaScript for handling adding and subtracting totals
+    
+    // Function to add to inventory
+    function addToInventory(productId) {
+        let quantityElement = document.getElementById('quantity-' + productId);
+        let currentQuantity = parseInt(quantityElement.innerText);
+        quantityElement.innerText = currentQuantity + 1; // Increment quantity
+        updateTotal(productId); // Update total
+    }
+    
+    // Function to subtract from inventory
+    function subtractFromInventory(productId) {
+        let quantityElement = document.getElementById('quantity-' + productId);
+        let currentQuantity = parseInt(quantityElement.innerText);
+        if (currentQuantity > 0) { // Ensure quantity doesn't go negative
+            quantityElement.innerText = currentQuantity - 1; // Decrement quantity
+            updateTotal(productId); // Update total
+        }
+    }
+    
+    // Function to update the total value for a product
+    function updateTotal(productId) {
+        let quantityElement = document.getElementById('quantity-' + productId);
+        let priceElement = document.getElementById('price-' + productId);
+        let totalElement = document.getElementById('total-' + productId);
+    
+        let currentQuantity = parseInt(quantityElement.innerText);
+        let price = parseInt(priceElement.innerText.replace('₦', ''));
+        let total = currentQuantity * price;
+    
+        totalElement.innerText = '₦' + total; // Update total price
+    }
+    
+    // Function to calculate overall total for all items in cart
+    function calculateCartTotal() {
+        let cartTotal = 0;
+        let totalElements = document.querySelectorAll('.product-total');
+        totalElements.forEach(function(totalElement) {
+            let totalValue = parseInt(totalElement.innerText.replace('₦', ''));
+            cartTotal += totalValue;
+        });
+        document.getElementById('cart-total').innerText = '₦' + cartTotal; // Update cart total
+    }
+    
+    // Event listener for checkout
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+        alert('Proceeding to checkout! Total: ' + document.getElementById('cart-total').innerText);
+    });
+    
+    </script>
+    
+
+<footer>
+    <p>&copy; 2024 Luemas Ventures Supermarket Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
